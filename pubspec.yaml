@@ -70,9 +70,9 @@ flutter:
   fonts:
     - family: Montserrat
       fonts:
-        # - asset: assets/fonts/Montserrat-Medium.ttf
+        - asset: assets/fonts/Montserrat-Medium.ttf
         - asset: assets/fonts/Montserrat-Regular.ttf
-          # weight: 500
+          weight: 500
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

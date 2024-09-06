@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:responsive_dash_board/models/drawer_item_model.dart';
+import 'package:responsive_dash_board/models/user_info_model.dart';
 import 'package:responsive_dash_board/utils/app_images.dart';
 import 'package:responsive_dash_board/views/widgets/active_and_inactive_item.dart';
 import 'package:responsive_dash_board/views/widgets/drawer_items_list_view.dart';
@@ -33,9 +34,10 @@ class CustomDrawer extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.only(left: 28, right: 20),
               child: UserInfoListTile(
-                image: Assets.imagesAvatar3,
-                title: 'Lekan Okeowo',
-                subTitle: 'demo@gmail.com',
+                itemModel: UserInfoModel(
+                    image: Assets.imagesAvatar3,
+                    title: 'Lekan Okeowo',
+                    subTitle: 'demo@gmail.com'),
               ),
             ),
           ),
