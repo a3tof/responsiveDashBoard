@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_style.dart';
-import 'package:responsive_dash_board/views/widgets/range_options.dart';
 
-class AllExpensesHeader extends StatelessWidget {
-  const AllExpensesHeader({super.key});
+class TransactionHeader extends StatelessWidget {
+  const TransactionHeader({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -11,13 +12,15 @@ class AllExpensesHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          'All Expenses',
+          'Transaction History',
           style: AppStyle.styleSemiBold20(context),
         ),
-        const Expanded(
-          child: SizedBox(),
-        ),
-        const RangeOptionsWidget()
+        Text(
+          'See all',
+          style: AppStyle.styleMedium16(context).copyWith(
+            color: const Color(0xff4EB7F2),
+          ),
+        )
       ],
     );
   }

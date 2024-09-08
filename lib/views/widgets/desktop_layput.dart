@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dash_board/views/widgets/all_expenses_and_quick_invoice_section.dart';
 import 'package:responsive_dash_board/views/widgets/custom_drawer.dart';
-import 'package:responsive_dash_board/views/widgets/dots_indecator.dart';
-import 'package:responsive_dash_board/views/widgets/my_cards_page_view.dart';
+import 'package:responsive_dash_board/views/widgets/my_card_and_transaction_history_section.dart';
 
 class DesktopLayput extends StatelessWidget {
   const DesktopLayput({super.key});
@@ -23,10 +22,7 @@ class DesktopLayput extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded(
-          child: MyCardsPageView(),
-        ),
-        DotsIndecator(),
+        Expanded(child: MyCardAndTransactionHistorySection()),
       ],
     );
   }
