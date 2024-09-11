@@ -21,9 +21,6 @@ class TransactionHistory extends StatelessWidget {
             color: const Color(0xFFAAAAAA),
           ),
         ),
-        const SizedBox(
-          height: 16,
-        ),
         const TransactionHistoryListView(),
       ],
     );

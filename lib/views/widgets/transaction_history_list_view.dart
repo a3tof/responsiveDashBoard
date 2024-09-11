@@ -27,11 +27,8 @@ class TransactionHistoryListView extends StatelessWidget {
       itemCount: items.length,
       shrinkWrap: true,
       itemBuilder: (context, index) {
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 12),
-          child: TransactionItem(
-            transactionModel: items[index],
-          ),
+        return TransactionItem(
+          transactionModel: items[index],
         );
       },
     );
