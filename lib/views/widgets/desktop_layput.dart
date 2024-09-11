@@ -19,7 +19,10 @@ class DesktopLayput extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: AllExpensesAndQuickInvoiceSection(),
+          child: Padding(
+            padding: EdgeInsets.only(top: 30),
+            child: AllExpensesAndQuickInvoiceSection(),
+          ),
         ),
         SizedBox(
           width: 24,
@@ -27,9 +30,6 @@ class DesktopLayput extends StatelessWidget {
         Expanded(
             child: Column(
           children: [
-            // SizedBox(
-            //   height: 30,
-            // ),
             MyCardAndTransactionHistorySection(),
             SizedBox(
               height: 24,
