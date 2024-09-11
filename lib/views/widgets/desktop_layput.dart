@@ -27,9 +27,9 @@ class DesktopLayput extends StatelessWidget {
         Expanded(
             child: Column(
           children: [
-            SizedBox(
-              height: 30,
-            ),
+            // SizedBox(
+            //   height: 30,
+            // ),
             MyCardAndTransactionHistorySection(),
             SizedBox(
               height: 24,
