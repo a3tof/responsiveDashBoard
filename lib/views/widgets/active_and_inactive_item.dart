@@ -16,9 +16,13 @@ class InActiveDrawerItem extends StatelessWidget {
     return ListTile(
       leading: SvgPicture.asset(model.image),
       minLeadingWidth: 30,
-      title: Text(
-        model.title,
-        style: AppStyle.styleRegular16(context),
+      title: FittedBox(
+        alignment: AlignmentDirectional.centerStart,
+        fit: BoxFit.scaleDown,
+        child: Text(
+          model.title,
+          style: AppStyle.styleRegular16(context),
+        ),
       ),
     );
   }
@@ -37,9 +41,13 @@ class ActiveDrawerItem extends StatelessWidget {
     return ListTile(
       leading: SvgPicture.asset(model.image),
       minLeadingWidth: 30,
-      title: Text(
-        model.title,
-        style: AppStyle.styleBold16(context),
+      title: FittedBox(
+        alignment: AlignmentDirectional.centerStart,
+        fit: BoxFit.scaleDown,
+        child: Text(
+          model.title,
+          style: AppStyle.styleBold16(context),
+        ),
       ),
       trailing: Container(
         width: 3.2676,
